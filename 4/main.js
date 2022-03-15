@@ -36,5 +36,11 @@ const mammiferi = animals.filter((element) => {
     if (element.classe == 'mammiferi') return true;
 })
 
-console.table(animals);
-console.log(mammiferi);
+/* for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i]);
+} */
+
+document.querySelector('button').addEventListener('click', () => console.table(mammiferi));
+
+
+document.querySelector('.second-button').addEventListener('click', () => console.table(animals));
